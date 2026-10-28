@@ -1,0 +1,6 @@
+{
+  "name": "GDG on Campus Poornima University",
+  "description": "Official 5-page developer ecosystem portal for Google Developer Groups on Campus Poornima University, featuring event schedules, core organizers, workshops, and community chronicles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

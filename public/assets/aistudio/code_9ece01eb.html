@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>GDG on Campus Poornima University</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script>
+  // Prevent theme flashing before render
+  try {
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  } catch (e) {}
+</script><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+@keyframes gdgGlowHalo {
+  0%, 100% {
+    transform: scale(0.9);
+    opacity: 0.4;
+    box-shadow: 0 0 35px 15px rgba(66, 133, 244, 0.35), 0 0 50px 25px rgba(52, 168, 83, 0.2);
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.85;
+    box-shadow: 0 0 55px 30px rgba(66, 133, 244, 0.6), 0 0 75px 40px rgba(234, 67, 53, 0.35), 0 0 90px 45px rgba(251, 188, 4, 0.3);
+  }
+}
+.loading-halo {
+  animation: gdgGlowHalo 2s ease-in-out infinite;
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline-variant": "#c2c6d5", "tertiary-fixed": "#ffdad5", "on-tertiary": "#ffffff", "on-surface-variant": "#424753", "on-tertiary-fixed": "#410001", "primary": "#0058bd", "on-tertiary-fixed-variant": "#930004", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#002108", "on-secondary": "#ffffff", "surface-container": "#eaedff", "surface": "#faf8ff", "surface-variant": "#dae2fd", "surface-dim": "#d2d9f4", "surface-bright": "#faf8ff", "tertiary": "#b51b15", "on-background": "#131b2e", "inverse-surface": "#283044", "on-secondary-container": "#00722f", "on-error-container": "#93000a", "secondary-fixed-dim": "#6ddd81", "on-primary-container": "#fefcff", "primary-container": "#2771df", "surface-tint": "#005ac1", "tertiary-container": "#d9372b", "secondary-container": "#86f898", "secondary": "#006e2c", "on-primary": "#ffffff", "secondary-fixed": "#89fa9b", "on-secondary-fixed-variant": "#005320", "primary-fixed-dim": "#adc6ff", "background": "#faf8ff", "inverse-primary": "#adc6ff", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "on-error": "#ffffff", "inverse-on-surface": "#eef0ff", "error-container": "#ffdad6", "on-surface": "#131b2e", "tertiary-fixed-dim": "#ffb4a9", "on-primary-fixed-variant": "#004494", "surface-container-high": "#e2e7ff", "on-primary-fixed": "#001a41", "surface-container-low": "#f2f3ff", "outline": "#727785", "on-tertiary-container": "#fffbff", "primary-fixed": "#d8e2ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "margin": "2rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-2xl-mobile": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "body-lg": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "code-sm": ["JetBrains Mono"], "title-lg": ["Plus Jakarta Sans"], "headline-2xl": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-2xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "code-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "code-sm": ["12px", { "lineHeight": "18px", "fontWeight": "500" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-2xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface dark:bg-slate-950 font-body-md text-body-md text-on-surface dark:text-slate-100 antialiased selection:bg-primary-fixed selection:text-on-primary-fixed transition-colors duration-200">
+<!-- LOADING SCREEN OVERLAY -->
+<div class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white dark:bg-slate-950 transition-opacity duration-700 ease-out" id="loading-screen">
+<div class="relative flex items-center justify-center">
+<!-- Animated Radial Halo Glow strictly behind the image -->
+<div class="loading-halo absolute w-36 h-36 rounded-full bg-blue-500/25 blur-2xl pointer-events-none"></div>
+<img alt="GDG Logo" class="w-24 h-24 object-contain relative z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrQom3Tt9rvCBR6UmxbyHYDfXjcqYULwXzFT0GV1G8_RVw_2LLbmCWBXVH2Y0LnuteeKmmQF9CrgyOK3DR-szZPAbKtF4SedBoGRQAdesNNUw6g-0ZR6kmXp2B_gMTtBEvAyvrRPpNWkjm0grdk_V6L6gTNgZAXZogyE_VESjWSgQ8KsmOQ4GblPS833Tk4GyKrKFaXamr6HEtLAz0KsNCuTpd_9Kw3fxEXvUxn1LY8mlooDJX8S7nrA"/>
+</div>
+<div class="mt-6 text-center">
+<h2 class="text-2xl font-semibold text-gray-900 dark:text-white">GDG on Campus</h2>
+<p class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 mt-1">POORNIMA UNIVERSITY</p>
+</div>
+</div>
+<header class="fixed top-0 inset-x-0 w-full z-40 bg-surface/85 dark:bg-slate-950/85 backdrop-blur-xl border-b border-transparent dark:border-slate-800 shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-colors duration-200"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><a class="flex items-center gap-space-sm shrink-0" href="#">
+<img alt="GDG on Campus Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6sh36ASHnO3cDStCy02ggabD3TQmmcPaUsiOZBAeeATHZSqkJ2duCYcSeUwArnvMzUdAG8k9qOaBMt6etpYo2ZLWfLfahT5JhIwrrUpDnSJPJYBEIhTbEX7CScxltHuCovDE4q3HEEPMKF6TWMIdj3S8Ctvx6FvhBbb7aIUjUh1H57fAZm8jYdyt98I4vMuyiQnVECpkL4xhPJ1IlgN0NLmGVZGtC2Hr6T7XTZY6c_oyi5mBu3b449g"/>
+<div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface dark:text-white leading-tight font-bold">GDG on Campus</span><span class="font-label-sm text-label-sm text-on-surface-variant dark:text-slate-400 leading-tight">Poornima University</span></div>
+</a></div><nav class="hidden md:flex items-center gap-space-xs bg-surface-container-low dark:bg-slate-900 px-space-xs py-space-xs rounded-full shadow-[0_1px_8px_rgba(0,0,0,0.02)] border border-transparent dark:border-slate-800" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg shadow-sm"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant dark:text-slate-300 hover:text-on-surface dark:hover:text-white hover:bg-surface-container dark:hover:bg-slate-800 transition-all" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant dark:text-slate-300 hover:text-on-surface dark:hover:text-white hover:bg-surface-container dark:hover:bg-slate-800 transition-all" data-path="about" href="#">About</a><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-headline-sm rounded-lg shadow-sm" data-path="events" href="#">Events</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant dark:text-slate-300 hover:text-on-surface dark:hover:text-white hover:bg-surface-container dark:hover:bg-slate-800 transition-all" data-path="organizers" href="#">Organizers</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant dark:text-slate-300 hover:text-on-surface dark:hover:text-white hover:bg-surface-container dark:hover:bg-slate-800 transition-all" data-path="media" href="#">Media</a></nav><div class="flex items-center gap-space-sm"><div aria-label="Toggle light and dark mode" class="relative w-16 h-8 rounded-full bg-surface-container-highest dark:bg-slate-800 cursor-pointer p-1 transition-colors duration-300 flex items-center justify-between shadow-inner border border-transparent dark:border-slate-700" id="theme-toggle-btn" role="button" tabindex="0"><span class="material-symbols-outlined text-label-sm text-primary select-none pl-1 transition-all duration-300 opacity-100" id="sun-icon">light_mode</span><span class="material-symbols-outlined text-label-sm text-outline select-none pr-1 transition-all duration-300 opacity-40" id="moon-icon">dark_mode</span><div class="absolute left-1 top-1 w-6 h-6 rounded-full bg-surface-container-lowest dark:bg-slate-900 shadow-md flex items-center justify-center transition-transform duration-300 transform translate-x-0 p-0.5 overflow-hidden ring-1 ring-black/5 dark:ring-white/10" id="theme-slider-thumb"><img alt="Google Logo" class="w-6 h-6 object-contain rounded-full select-none p-0.5 pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIElUPPJDKWUsJkYGvYr-ChJ8fsazIEhuJh_41c0t96s3ogNnfmnwKMKC4ABfRhHdqd-6u0fBQQgbbja7ODASy3V-ITdXiB6pP9VIFEncqilwUvAXwNKpqd8Kc6Y1H8zigKdjzZF1Dek7c9_prZ6zz8AR_32Krw0xKL54p3D-QkaZVBzfALAhX5VKaR3okk1LOYVOw96YC9twMRIzLzZIcjy6WC7Hze2d1F-H0HDUHUQXs7pV4jCxNEw"/></div></div></div></div></header><main class="w-full pt-20 bg-surface dark:bg-slate-950 min-h-[calc(100vh-20rem)] transition-colors duration-200"><div class="flex flex-col w-full">
+<!-- Interactive View Controls & Section Intro -->
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin w-full pt-space-lg pb-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-primary dark:text-blue-400 uppercase tracking-widest font-semibold">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="">Chapter Activity &amp; Timelines</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface dark:text-white tracking-tight">Community Events</h1>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300">
+          Immersive workshops, hackathons, and technical design sprints hosted by Google Developer Groups on Campus at Poornima University.
+        </p>
+</div>
+<!-- Segmented Pill Switcher -->
+<div class="self-start md:self-auto bg-surface-container-low dark:bg-slate-900 border border-transparent dark:border-slate-800 p-1.5 rounded-full flex items-center shadow-sm">
+<button aria-selected="true" class="relative px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 flex items-center gap-space-xs bg-surface-container-lowest dark:bg-slate-800 text-primary dark:text-blue-400 shadow-sm font-semibold" id="btn-upcoming" onclick="switchTab('upcoming')" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">event_upcoming</span>
+<span class="">Upcoming Events</span>
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>
+</button>
+<button aria-selected="false" class="relative px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 flex items-center gap-space-xs text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white" id="btn-past" onclick="switchTab('past')" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span class="">Past Events</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 font-code-sm text-[10px]">4</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Views Container -->
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin w-full pb-space-xl">
+<!-- State 1: Upcoming Events (Empty State Card) -->
+<div class="w-full flex flex-col items-center" id="view-upcoming">
+<div class="w-full bg-surface-container-lowest dark:bg-slate-900 rounded-xl p-space-lg lg:p-space-xl shadow-sm border border-transparent dark:border-slate-800 text-center flex flex-col items-center relative overflow-hidden">
+<!-- Google Color Geometric Gradient Accents in Backing -->
+<div class="absolute -top-24 -left-24 w-64 h-64 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-64 h-64 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+<!-- Interactive Inline SVG Calendar Graphic -->
+<div class="relative w-44 h-44 mb-space-md flex items-center justify-center">
+<svg class="w-40 h-40 drop-shadow-md" fill="none" viewbox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+<!-- Calendar Backplate -->
+<rect fill="#f2f3ff" height="104" rx="16" width="112" x="24" y="32"></rect>
+<!-- Header Bar with Google Blue -->
+<path d="M24 48 C24 39.1634 31.1634 32 40 32 H120 C128.837 32 136 39.1634 136 48 V56 H24 V48 Z" fill="#0058bd"></path>
+<!-- Spiral Rings -->
+<rect fill="#b51b15" height="18" rx="3" width="6" x="46" y="22"></rect>
+<rect fill="#2771df" height="18" rx="3" width="6" x="77" y="22"></rect>
+<rect fill="#006e2c" height="18" rx="3" width="6" x="108" y="22"></rect>
+<!-- Calendar Inner Sheets Pattern -->
+<circle cx="50" cy="78" fill="#dae2fd" r="5"></circle>
+<circle cx="80" cy="78" fill="#dae2fd" r="5"></circle>
+<circle cx="110" cy="78" fill="#dae2fd" r="5"></circle>
+<circle cx="50" cy="100" fill="#dae2fd" r="5"></circle>
+<circle cx="80" cy="100" fill="#2771df" r="5"></circle>
+<circle cx="110" cy="100" fill="#dae2fd" r="5"></circle>
+<circle cx="50" cy="120" fill="#dae2fd" r="5"></circle>
+<circle cx="80" cy="120" fill="#dae2fd" r="5"></circle>
+<!-- Radar Search Ring / Pulse Element -->
+<circle class="animate-spin" cx="80" cy="100" r="14" stroke="#0058bd" stroke-dasharray="4 4" stroke-width="2" style="animation-duration: 8s;"></circle>
+<path d="M76 96 L84 104 M84 96 L76 104" stroke="#0058bd" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<!-- Copy Details -->
+<div class="max-w-md mx-auto flex flex-col gap-space-xs">
+<div class="inline-flex items-center justify-center gap-1.5 px-3 py-1 rounded-full bg-surface-container dark:bg-slate-800 text-primary dark:text-blue-400 font-code-sm text-code-sm font-semibold mx-auto">
+<span class="material-symbols-outlined text-[16px]">hourglass_empty</span>
+<span class="">NEXT CYCLE COMMENCING</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface dark:text-white">No Upcoming Events Right Now</h2>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300">
+            There are currently no upcoming events scheduled for this sprint. We're finalizing dates for our Spring AI Jam and Cloud Study Jams!
+          </p>
+</div>
+<!-- CTA Cluster -->
+<div class="mt-space-lg flex flex-col sm:flex-row items-center gap-space-sm justify-center">
+<button class="px-space-md py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center gap-2 shadow-sm" onclick="toggleModal(true)" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span class="">Subscribe to Calendar / Newsletter</span>
+</button>
+<a class="px-space-md py-3 rounded-xl bg-surface-container dark:bg-slate-800 text-on-surface dark:text-slate-200 font-label-md text-label-md font-medium hover:bg-surface-container-high dark:hover:bg-slate-700 transition-all flex items-center gap-2" href="https://gdg.community.dev" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">public</span>
+<span class="">Join GDG Community Platform</span>
+</a>
+</div>
+<!-- Fast Stats Banner -->
+<div class="mt-space-xl pt-space-lg w-full grid grid-cols-2 md:grid-cols-4 gap-gutter max-w-3xl">
+<div class="flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-primary dark:text-blue-400">1,400+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400">Poornima Members</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-tertiary dark:text-red-400">14+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400">Tech Sessions Held</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-secondary dark:text-green-400">26</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400">Open Source Repos</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-on-surface dark:text-white">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400">Student-Led &amp; Free</span>
+</div>
+</div>
+</div>
+</div>
+<!-- State 2: Past Events (Grid of 4 Rich Cards) -->
+<div class="w-full hidden" id="view-past">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- EVENT 1: Google Solution Challenge Kick-off (Mar 17) -->
+<div class="bg-surface-container-lowest dark:bg-slate-900 rounded-xl shadow-sm border border-transparent dark:border-slate-800 overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-md">
+<!-- Track Accent Bar (Google Green for UN SDGs / Cloud) -->
+<div class="h-1.5 w-full bg-secondary"></div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<!-- Top Metadata & Date Badge -->
+<div class="flex items-center justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary/10 dark:bg-green-950/50 text-secondary dark:text-green-400 font-code-sm text-code-sm font-semibold">
+                    Global Challenge
+                  </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 font-code-sm text-code-sm">
+                    UN SDGs
+                  </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant dark:text-slate-400 font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_month</span>
+<span class="font-semibold text-on-surface dark:text-white">Mar 17, 2025</span>
+</div>
+</div>
+<!-- Title -->
+<h3 class="font-headline-md text-headline-md text-on-surface dark:text-white mb-2">
+                Google Solution Challenge Kick-off
+              </h3>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-space-md line-clamp-3">
+                Building solutions for the UN 17 Sustainable Development Goals using Google technologies. Included keynote tracks, regional team formation sprints, and mentorship frameworks with seasoned engineers.
+              </p>
+<!-- Image Placeholder for Event Recap -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md shadow-inner bg-surface-container dark:bg-slate-950">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="University students collaborating around laptops in a sunny modern auditorium at Poornima University Jaipur, coding prototypes with Google Solution Challenge banners, warm indoor lighting, collaborative developer workspace atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDPND1oQgdp7VrRdPr2g2muOqb7WbbQRm1Q9w1HTmcIy49qm3CKkPIY_gN5vuRzmXyDOD6XYsVA6p9DcJjjDmx0wsHcTkch0-8w1l9dEnWj7N1c6V4tp5xr0PHHZANf_phZFvsUNXl5eH1tnuvKV734rMAwCb0FhkIjEAFV5vSa7TxsPsK9G0aeBM6oo4eTrdSLpTF0edU3r79N695o8mArULN4ab94Uf0a8NDJr-g"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/85 backdrop-blur-md px-2.5 py-1 rounded-md text-inverse-on-surface font-code-sm text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">groups</span>
+<span class="">180+ Attendees • 24 Working Teams</span>
+</div>
+</div>
+<!-- Speaker & Organizer Notes -->
+<div class="bg-surface-container-low dark:bg-slate-800/60 rounded-xl p-space-sm flex items-center gap-space-sm mb-space-md border border-transparent dark:border-slate-800">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest dark:bg-slate-800 flex items-center justify-center text-primary dark:text-blue-400 shrink-0">
+<span class="material-symbols-outlined">record_voice_over</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface dark:text-white font-semibold truncate">Keynote: Tackling Climate &amp; Clean Water Goals</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 truncate">Lead Mentors: Ananya Sharma (Lead) &amp; Prof. R. K. Mittal</span>
+</div>
+</div>
+</div>
+<!-- Action Area -->
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-code-sm text-code-sm text-outline dark:text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Seminar Hall 2, PU
+              </span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container dark:bg-slate-800 text-primary dark:text-blue-400 hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5" onclick="showRecapDetail('Solution Challenge Kick-off', 'https://github.com/gdg-pu/solution-challenge-2025')" type="button">
+<span class="">View Recap &amp; Slides</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- EVENT 2: Build with AI Workshop (Jan 21) -->
+<div class="bg-surface-container-lowest dark:bg-slate-900 rounded-xl shadow-sm border border-transparent dark:border-slate-800 overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-md">
+<!-- Track Accent Bar (Google Blue for AI/Vertex) -->
+<div class="h-1.5 w-full bg-primary"></div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<!-- Top Metadata & Date Badge -->
+<div class="flex items-center justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 dark:bg-blue-950/50 text-primary dark:text-blue-400 font-code-sm text-code-sm font-semibold">
+                    Generative AI
+                  </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 font-code-sm text-code-sm">
+                    Vertex AI &amp; Gemini
+                  </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant dark:text-slate-400 font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span>
+<span class="font-semibold text-on-surface dark:text-white">Jan 21, 2025</span>
+</div>
+</div>
+<!-- Title -->
+<h3 class="font-headline-md text-headline-md text-on-surface dark:text-white mb-2">
+                Build with AI Workshop
+              </h3>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-space-md line-clamp-3">
+                Hands-on technical workshop focused on the Gemini 1.5 Pro API, Multimodal prompt orchestration, and deploying agentic workflows on Google Cloud Vertex AI for university students.
+              </p>
+<!-- Image Placeholder for Event Recap -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md shadow-inner bg-surface-container dark:bg-slate-950">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High tech computer lab with students writing Python and JavaScript code testing multimodal AI models on dual screens, glowing blue and indigo backlighting, live code projector screen in background with Vertex AI console" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKxhRLdxcL38uTjEkTwvo2xPADXuyogZPgC1o51DLzyoo9Yf5_-qvm6X4xdM-xh_VLdGi_97AGKk9bUM98OdjEc0sjTO0g3GDHxgGI6WoC7H6_vsKDa91xlxnwScPFc-TdfIG4v2D9zAyWVQHgJ23YwRW81z5n0EM9rCVzxNhGFCnnjJy9sLdJzRGmXXpxnhhJBCPquwVFs6stkazdPMnuzs2ZQnDOADRLD7uPB-zb"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/85 backdrop-blur-md px-2.5 py-1 rounded-md text-inverse-on-surface font-code-sm text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">terminal</span>
+<span class="">140+ Cloud Credits Activated</span>
+</div>
+</div>
+<!-- Speaker & Organizer Notes -->
+<div class="bg-surface-container-low dark:bg-slate-800/60 rounded-xl p-space-sm flex items-center gap-space-sm mb-space-md border border-transparent dark:border-slate-800">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest dark:bg-slate-800 flex items-center justify-center text-primary dark:text-blue-400 shrink-0">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface dark:text-white font-semibold truncate">Hands-on: Gemini API &amp; Function Calling</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 truncate">Guest Speaker: Vikram Saini (Google Cloud Certified Architect)</span>
+</div>
+</div>
+</div>
+<!-- Action Area -->
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-code-sm text-code-sm text-outline dark:text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> CS Lab 04, Tech Block
+              </span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container dark:bg-slate-800 text-primary dark:text-blue-400 hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5" onclick="showRecapDetail('Build with AI Workshop', 'https://github.com/gdg-pu/build-with-ai-2025')" type="button">
+<span class="">View Recap &amp; Slides</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- EVENT 3: GDG India Hackathon Briefing Session (Dec 24) -->
+<div class="bg-surface-container-lowest dark:bg-slate-900 rounded-xl shadow-sm border border-transparent dark:border-slate-800 overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-md">
+<!-- Track Accent Bar (Google Red for Critical Briefings / Competitions) -->
+<div class="h-1.5 w-full bg-tertiary"></div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<!-- Top Metadata & Date Badge -->
+<div class="flex items-center justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary/10 dark:bg-red-950/50 text-tertiary dark:text-red-400 font-code-sm text-code-sm font-semibold">
+                    National Hackathon
+                  </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 font-code-sm text-code-sm">
+                    Track Briefing
+                  </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant dark:text-slate-400 font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">calendar_month</span>
+<span class="font-semibold text-on-surface dark:text-white">Dec 24, 2024</span>
+</div>
+</div>
+<!-- Title -->
+<h3 class="font-headline-md text-headline-md text-on-surface dark:text-white mb-2">
+                GDG India Hackathon Briefing Session
+              </h3>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-space-md line-clamp-3">
+                Comprehensive breakdown of the nationwide hackathon tracks, evaluation matrices, API quotas, and pitch deck fundamentals. Included an open Q&amp;A on submission rubrics and architecture reviews.
+              </p>
+<!-- Image Placeholder for Event Recap -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md shadow-inner bg-surface-container dark:bg-slate-950">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Speaker presenting a detailed system architecture slide to an engaged crowd of college developers, warm auditorium lighting, red and blue graphic accents on the presentation screen, vibrant developer conference vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUTggkjfckiHouy4T24SW4dj5xUjveafWwBla4WsEA0rl5yPv45e8jKO5wMSSpB9Y9q3qZQU8HVhdYB-YAnDzp8pTkXwkWg3wdu_EQkr_R_S8dSmeTa2AfFymRyl3y9-Vl9DAYJzrmIhv7PwCsIclgIbiTL6zPnTxgebWUdwz6WO1hQY0Ip80RqhAb_vjrexnZYfzNQHDPHLXyQqn3bO6zGiaf2j0Mi2WiUqxZ8nna"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/85 backdrop-blur-md px-2.5 py-1 rounded-md text-inverse-on-surface font-code-sm text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim">analytics</span>
+<span class="">35 Pitch Teams Formed</span>
+</div>
+</div>
+<!-- Speaker & Organizer Notes -->
+<div class="bg-surface-container-low dark:bg-slate-800/60 rounded-xl p-space-sm flex items-center gap-space-sm mb-space-md border border-transparent dark:border-slate-800">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest dark:bg-slate-800 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined">rule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface dark:text-white font-semibold truncate">Track Breakdown: FinTech, HealthTech &amp; Web3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 truncate">Panelists: GDG Core Council &amp; Faculty Advisors</span>
+</div>
+</div>
+</div>
+<!-- Action Area -->
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-code-sm text-code-sm text-outline dark:text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Main PU Auditorium &amp; Meet
+              </span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container dark:bg-slate-800 text-primary dark:text-blue-400 hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5" onclick="showRecapDetail('GDG India Hackathon Briefing', 'https://github.com/gdg-pu/hackathon-briefing-2024')" type="button">
+<span class="">View Recap &amp; Slides</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- EVENT 4: Orientation 2025-26 (Oct 5) -->
+<div class="bg-surface-container-lowest dark:bg-slate-900 rounded-xl shadow-sm border border-transparent dark:border-slate-800 overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-md">
+<!-- Track Accent Bar (Google Yellow / Foundations & Community) -->
+<div class="h-1.5 w-full bg-primary-container"></div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<!-- Top Metadata & Date Badge -->
+<div class="flex items-center justify-between gap-2 mb-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container/10 text-primary-container font-code-sm text-code-sm font-semibold">
+                    Community Kickoff
+                  </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container dark:bg-slate-800 text-on-surface-variant dark:text-slate-300 font-code-sm text-code-sm">
+                    Cohort 2025-26
+                  </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant dark:text-slate-400 font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-container">calendar_month</span>
+<span class="font-semibold text-on-surface dark:text-white">Oct 5, 2024</span>
+</div>
+</div>
+<!-- Title -->
+<h3 class="font-headline-md text-headline-md text-on-surface dark:text-white mb-2">
+                Orientation 2025-26
+              </h3>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-space-md line-clamp-3">
+                Welcoming our freshest engineering cohort to Google Developer Groups on Campus. Revealed chapter roadmap, technical domains (AI, Web, Cloud, Android), and leadership opportunities.
+              </p>
+<!-- Image Placeholder for Event Recap -->
+<div class="relative w-full h-44 rounded-xl overflow-hidden mb-space-md shadow-inner bg-surface-container dark:bg-slate-950">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant group photo of enthusiastic college students holding Google Developer Groups swag, stickers, and t-shirts, smiling on campus courtyard at Poornima University, bright daylight, dynamic university club energy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnmeGkNakRxpIuBpqw2f71YILxCJpOVzBgCjh3ZRAON2WVeh-8O5dwerZNkNzyfqL6eCPqkbtzYI37m00JR8J2lcX_NycFMTOq2kSGkkXtAC1i_GO4YdM1kszp0KCfRiV6uxuu87fB39Ntqh3h4Jvp0kEaIURhX1Y6RFBc32vOd2xiG9X3jIBqBl8Cq1sEqPtw16IiCTVuuPnPIaS46KgcOE9o0ldWmKNgWXTN-8y4"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/85 backdrop-blur-md px-2.5 py-1 rounded-md text-inverse-on-surface font-code-sm text-[11px] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">celebration</span>
+<span class="">320+ Freshers Registered</span>
+</div>
+</div>
+<!-- Speaker & Organizer Notes -->
+<div class="bg-surface-container-low dark:bg-slate-800/60 rounded-xl p-space-sm flex items-center gap-space-sm mb-space-md border border-transparent dark:border-slate-800">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest dark:bg-slate-800 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface dark:text-white font-semibold truncate">Keynote: Developer Journey at Poornima</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 truncate">Organizers: Core Team Leads &amp; Domain Ambassadors</span>
+</div>
+</div>
+</div>
+<!-- Action Area -->
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-code-sm text-code-sm text-outline dark:text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Central Amphitheatre
+              </span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container dark:bg-slate-800 text-primary dark:text-blue-400 hover:bg-primary hover:text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5" onclick="showRecapDetail('Orientation 2025-26', 'https://github.com/gdg-pu/orientation-2024')" type="button">
+<span class="">View Recap &amp; Slides</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Subscription Modal / Drawer for Calendar -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="calendar-modal">
+<div class="bg-surface-container-lowest dark:bg-slate-900 border border-transparent dark:border-slate-800 rounded-xl max-w-lg w-full mx-margin-mobile p-space-lg shadow-xl relative transform scale-95 transition-transform duration-300" id="modal-box">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/10 dark:bg-blue-900/30 flex items-center justify-center text-primary dark:text-blue-400">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-surface dark:text-white">Stay in the Loop</span>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container dark:hover:bg-slate-800 flex items-center justify-center text-outline dark:text-slate-400 transition-colors" onclick="toggleModal(false)" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 pb-space-md">
+        Subscribe to get calendar sync invites for all upcoming Poornima University Google developer sprints, hackathons, and guest tech talks directly in your inbox.
+      </p>
+<form class="flex flex-col gap-space-sm" id="subscribe-form" onsubmit="handleSubscribe(event)">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface dark:text-white font-semibold mb-1" for="sub-name">Student Full Name</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low dark:bg-slate-800 font-body-sm text-body-sm text-on-surface dark:text-white placeholder:text-outline dark:placeholder:text-slate-500 border border-transparent dark:border-slate-700 focus:outline-none focus:bg-surface-container-lowest dark:focus:bg-slate-900 focus:ring-2 focus:ring-primary" id="sub-name" placeholder="e.g. Aryan Mehra" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface dark:text-white font-semibold mb-1" for="sub-email">University or Personal Email</label>
+<input class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low dark:bg-slate-800 font-body-sm text-body-sm text-on-surface dark:text-white placeholder:text-outline dark:placeholder:text-slate-500 border border-transparent dark:border-slate-700 focus:outline-none focus:bg-surface-container-lowest dark:focus:bg-slate-900 focus:ring-2 focus:ring-primary" id="sub-email" placeholder="name@poornima.edu.in" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface dark:text-white font-semibold mb-1">Preferred Interest Tracks</label>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low dark:bg-slate-800/80 cursor-pointer hover:bg-surface-container dark:hover:bg-slate-800">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface dark:text-slate-200">Generative AI</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low dark:bg-slate-800/80 cursor-pointer hover:bg-surface-container dark:hover:bg-slate-800">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface dark:text-slate-200">Google Cloud</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low dark:bg-slate-800/80 cursor-pointer hover:bg-surface-container dark:hover:bg-slate-800">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface dark:text-slate-200">Web &amp; Android</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low dark:bg-slate-800/80 cursor-pointer hover:bg-surface-container dark:hover:bg-slate-800">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface dark:text-slate-200">Solution Challenge</span>
+</label>
+</div>
+</div>
+<button class="w-full mt-space-sm py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span class="">Confirm Calendar Subscription</span>
+</button>
+</form>
+<div class="hidden text-center py-6 flex flex-col items-center gap-2" id="sub-success">
+<span class="material-symbols-outlined text-4xl text-secondary">check_circle</span>
+<span class="font-title-lg text-title-lg text-on-surface dark:text-white">You're Subscribed!</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400">We've dispatched the Google Calendar invite sync link to your inbox.</span>
+<button class="mt-4 px-4 py-2 rounded-lg bg-surface-container dark:bg-slate-800 text-on-surface dark:text-slate-200 font-label-md text-label-md" onclick="toggleModal(false)" type="button">
+          Close
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Slide / Recap Notification Toast -->
+<div class="fixed bottom-6 right-6 z-50 max-w-sm w-full bg-inverse-surface text-inverse-on-surface p-space-md rounded-xl shadow-xl transform translate-y-32 opacity-0 transition-all duration-300 flex items-start gap-space-sm pointer-events-none" id="toast-recap">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">verified</span>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-semibold" id="toast-title">Recap Ready</span>
+<span class="font-body-sm text-body-sm text-surface-container-highest">Opening presentation slide deck and workshop repository.</span>
+</div>
+</div>
+<!-- Client-side Interactive Switcher Script -->
+<script>
+    function switchTab(target) {
+      const upView = document.getElementById('view-upcoming');
+      const pastView = document.getElementById('view-past');
+      const upBtn = document.getElementById('btn-upcoming');
+      const pastBtn = document.getElementById('btn-past');
+
+      if (target === 'upcoming') {
+        upView.classList.remove('hidden');
+        pastView.classList.add('hidden');
+
+        upBtn.classList.add('bg-surface-container-lowest', 'dark:bg-slate-800', 'text-primary', 'dark:text-blue-400', 'shadow-sm', 'font-semibold');
+        upBtn.classList.remove('text-on-surface-variant', 'dark:text-slate-400');
+        upBtn.setAttribute('aria-selected', 'true');
+
+        pastBtn.classList.remove('bg-surface-container-lowest', 'dark:bg-slate-800', 'text-primary', 'dark:text-blue-400', 'shadow-sm', 'font-semibold');
+        pastBtn.classList.add('text-on-surface-variant', 'dark:text-slate-400');
+        pastBtn.setAttribute('aria-selected', 'false');
+      } else {
+        upView.classList.add('hidden');
+        pastView.classList.remove('hidden');
+
+        pastBtn.classList.add('bg-surface-container-lowest', 'dark:bg-slate-800', 'text-primary', 'dark:text-blue-400', 'shadow-sm', 'font-semibold');
+        pastBtn.classList.remove('text-on-surface-variant', 'dark:text-slate-400');
+        pastBtn.setAttribute('aria-selected', 'true');
+
+        upBtn.classList.remove('bg-surface-container-lowest', 'dark:bg-slate-800', 'text-primary', 'dark:text-blue-400', 'shadow-sm', 'font-semibold');
+        upBtn.classList.add('text-on-surface-variant', 'dark:text-slate-400');
+        upBtn.setAttribute('aria-selected', 'false');
+      }
+    }
+
+    function toggleModal(open) {
+      const modal = document.getElementById('calendar-modal');
+      const box = document.getElementById('modal-box');
+      if (open) {
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        box.classList.remove('scale-95');
+        box.classList.add('scale-100');
+      } else {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        box.classList.remove('scale-100');
+        box.classList.add('scale-95');
+      }
+    }
+
+    function handleSubscribe(e) {
+      e.preventDefault();
+      document.getElementById('subscribe-form').classList.add('hidden');
+      document.getElementById('sub-success').classList.remove('hidden');
+    }
+
+    function showRecapDetail(eventTitle, fallbackUrl) {
+      const toast = document.getElementById('toast-recap');
+      const titleEl = document.getElementById('toast-title');
+      titleEl.innerText = eventTitle + ' Recap';
+      
+      toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+      
+      setTimeout(function() {
+        toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low dark:bg-slate-900 border-t border-transparent dark:border-slate-800 mt-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.02)] transition-colors duration-200"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start pb-space-lg"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="GDG on Campus Logo" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6sh36ASHnO3cDStCy02ggabD3TQmmcPaUsiOZBAeeATHZSqkJ2duCYcSeUwArnvMzUdAG8k9qOaBMt6etpYo2ZLWfLfahT5JhIwrrUpDnSJPJYBEIhTbEX7CScxltHuCovDE4q3HEEPMKF6TWMIdj3S8Ctvx6FvhBbb7aIUjUh1H57fAZm8jYdyt98I4vMuyiQnVECpkL4xhPJ1IlgN0NLmGVZGtC2Hr6T7XTZY6c_oyi5mBu3b449g"/><span class="font-headline-sm text-headline-sm text-on-surface dark:text-white">GDG on Campus</span></div><p class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 max-w-sm">Google Developer Groups on Campus at Poornima University, Jaipur. Empowering university technocrats, open source innovators, and student developers to build modern technology.</p><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-outline dark:text-slate-400"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-label-md">location_on</span> ISI-2, RIICO Institutional Area, Sitapura, Jaipur, Rajasthan 302022</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-label-md">school</span> Poornima University Faculty of Computer Science &amp; Engineering</span></div></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface dark:text-white">Explore</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="home" href="#">Home Overview</a><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="about" href="#">About Chapter</a><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="events" href="#">Events &amp; Workshops</a><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="organizers" href="#">Core Organizers</a><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="media" href="#">Media &amp; Gallery</a></div></div><div class="md:col-span-4 flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface dark:text-white">Connect With Us</span><p class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400">Follow our official community hubs for hackathons, study jams, and technical announcements.</p><div class="flex items-center gap-space-sm"><a aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-surface-container dark:bg-slate-800 flex items-center justify-center text-on-surface-variant dark:text-slate-300 hover:bg-primary hover:text-on-primary transition-all duration-200" href="https://www.linkedin.com/company/gdg-poornima-university/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined">share</span></a><a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container dark:bg-slate-800 flex items-center justify-center text-on-surface-variant dark:text-slate-300 hover:bg-tertiary hover:text-on-tertiary transition-all duration-200" href="https://www.instagram.com/gdg.poornima" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined">photo_camera</span></a><a aria-label="YouTube" class="w-10 h-10 rounded-full bg-surface-container dark:bg-slate-800 flex items-center justify-center text-on-surface-variant dark:text-slate-300 hover:bg-tertiary-container hover:text-on-tertiary-container transition-all duration-200" href="https://www.youtube.com/gdgs" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined">smart_display</span></a></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm border-t border-transparent dark:border-slate-800/60"><span class="font-body-sm text-body-sm text-outline dark:text-slate-500">© 2025 GDG on Campus Poornima University. All rights reserved.</span><span class="font-code-sm text-code-sm text-outline-variant dark:text-slate-500">Designed for Developer Communities • Powered by Google Developers</span></div></div></footer>
+<script>
+(function() {
+  // 1. Loading Screen: Exactly 2000ms visible before fading out
+  var loadingEl = document.getElementById('loading-screen');
+  if (loadingEl) {
+    setTimeout(function() {
+      loadingEl.style.opacity = '0';
+      loadingEl.style.pointerEvents = 'none';
+      setTimeout(function() {
+        if (loadingEl && loadingEl.parentNode) {
+          loadingEl.parentNode.removeChild(loadingEl);
+        }
+      }, 700);
+    }, 2000);
+  }
+
+  // 2. Interactive Reactive Theme State Management
+  var themeState = {
+    current: (function() {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || saved === 'light') return saved;
+      } catch (e) {}
+      return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    })(),
+    listeners: [],
+    get theme() {
+      return this.current;
+    },
+    set theme(val) {
+      this.current = val;
+      try {
+        localStorage.setItem('theme', val);
+      } catch (e) {}
+      this.notify();
+    },
+    subscribe: function(fn) {
+      this.listeners.push(fn);
+      fn(this.current);
+    },
+    notify: function() {
+      var self = this;
+      this.listeners.forEach(function(fn) {
+        fn(self.current);
+      });
+    }
+  };
+
+  var toggleBtn = document.getElementById('theme-toggle-btn');
+  var thumb = document.getElementById('theme-slider-thumb');
+  var sunIcon = document.getElementById('sun-icon');
+  var moonIcon = document.getElementById('moon-icon');
+
+  // React to theme state changes: apply/remove 'dark' class & sync toggle elements
+  themeState.subscribe(function(theme) {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      if (thumb) {
+        thumb.classList.remove('translate-x-0');
+        thumb.classList.add('translate-x-7');
+      }
+      if (sunIcon) {
+        sunIcon.classList.remove('opacity-100', 'text-primary');
+        sunIcon.classList.add('opacity-0', 'pointer-events-none');
+      }
+      if (moonIcon) {
+        moonIcon.classList.remove('opacity-40', 'text-outline');
+        moonIcon.classList.add('opacity-100', 'text-blue-400');
+      }
+    } else {
+      document.documentElement.classList.remove('dark');
+      if (thumb) {
+        thumb.classList.remove('translate-x-7');
+        thumb.classList.add('translate-x-0');
+      }
+      if (sunIcon) {
+        sunIcon.classList.remove('opacity-0', 'pointer-events-none');
+        sunIcon.classList.add('opacity-100', 'text-primary');
+      }
+      if (moonIcon) {
+        moonIcon.classList.remove('opacity-100', 'text-blue-400');
+        moonIcon.classList.add('opacity-40', 'text-outline');
+      }
+    }
+  });
+
+  // Bind click & keyboard events for accessibility and seamless switching
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      themeState.theme = themeState.theme === 'dark' ? 'light' : 'dark';
+    });
+    toggleBtn.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        themeState.theme = themeState.theme === 'dark' ? 'light' : 'dark';
+      }
+    });
+  }
+})();
+</script>
+</body></html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>GDG on Campus Poornima University</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script>
+  // Prevent theme flashing before render
+  try {
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  } catch (e) {}
+</script><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+@keyframes gdgGlowHalo {
+  0%, 100% {
+    transform: scale(0.9);
+    opacity: 0.4;
+    box-shadow: 0 0 35px 15px rgba(66, 133, 244, 0.35), 0 0 50px 25px rgba(52, 168, 83, 0.2);
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.85;
+    box-shadow: 0 0 55px 30px rgba(66, 133, 244, 0.6), 0 0 75px 40px rgba(234, 67, 53, 0.35), 0 0 90px 45px rgba(251, 188, 4, 0.3);
+  }
+}
+.loading-halo {
+  animation: gdgGlowHalo 2s ease-in-out infinite;
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline-variant": "#c2c6d5", "tertiary-fixed": "#ffdad5", "on-tertiary": "#ffffff", "on-surface-variant": "#424753", "on-tertiary-fixed": "#410001", "primary": "#0058bd", "on-tertiary-fixed-variant": "#930004", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#002108", "on-secondary": "#ffffff", "surface-container": "#eaedff", "surface": "#faf8ff", "surface-variant": "#dae2fd", "surface-dim": "#d2d9f4", "surface-bright": "#faf8ff", "tertiary": "#b51b15", "on-background": "#131b2e", "inverse-surface": "#283044", "on-secondary-container": "#00722f", "on-error-container": "#93000a", "secondary-fixed-dim": "#6ddd81", "on-primary-container": "#fefcff", "primary-container": "#2771df", "surface-tint": "#005ac1", "tertiary-container": "#d9372b", "secondary-container": "#86f898", "secondary": "#006e2c", "on-primary": "#ffffff", "secondary-fixed": "#89fa9b", "on-secondary-fixed-variant": "#005320", "primary-fixed-dim": "#adc6ff", "background": "#faf8ff", "inverse-primary": "#adc6ff", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "on-error": "#ffffff", "inverse-on-surface": "#eef0ff", "error-container": "#ffdad6", "on-surface": "#131b2e", "tertiary-fixed-dim": "#ffb4a9", "on-primary-fixed-variant": "#004494", "surface-container-high": "#e2e7ff", "on-primary-fixed": "#001a41", "surface-container-low": "#f2f3ff", "outline": "#727785", "on-tertiary-container": "#fffbff", "primary-fixed": "#d8e2ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "gutter": "1.5rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "margin": "2rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-md": "1rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-2xl-mobile": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "body-lg": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "code-sm": ["JetBrains Mono"], "title-lg": ["Plus Jakarta Sans"], "headline-2xl": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-2xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "code-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "code-sm": ["12px", { "lineHeight": "18px", "fontWeight": "500" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-2xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface dark:bg-slate-950 font-body-md text-body-md text-on-surface dark:text-slate-100 antialiased selection:bg-primary-fixed selection:text-on-primary-fixed transition-colors duration-200">
+<!-- LOADING SCREEN OVERLAY -->
+<div class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white dark:bg-slate-950 transition-opacity duration-700 ease-out" id="loading-screen">
+<div class="relative flex items-center justify-center">
+<!-- Animated Radial Halo Glow strictly behind the image -->
+<div class="loading-halo absolute w-36 h-36 rounded-full bg-blue-500/25 blur-2xl pointer-events-none"></div>
+<img alt="GDG Logo" class="w-24 h-24 object-contain relative z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrQom3Tt9rvCBR6UmxbyHYDfXjcqYULwXzFT0GV1G8_RVw_2LLbmCWBXVH2Y0LnuteeKmmQF9CrgyOK3DR-szZPAbKtF4SedBoGRQAdesNNUw6g-0ZR6kmXp2B_gMTtBEvAyvrRPpNWkjm0grdk_V6L6gTNgZAXZogyE_VESjWSgQ8KsmOQ4GblPS833Tk4GyKrKFaXamr6HEtLAz0KsNCuTpd_9Kw3fxEXvUxn1LY8mlooDJX8S7nrA"/>
+</div>
+<div class="mt-6 text-center">
+<h2 class="text-2xl font-semibold text-gray-900 dark:text-white">GDG on Campus</h2>
+<p class="text-sm uppercase tracking-widest text-gray-500 dark:text-gray-400 mt-1">POORNIMA UNIVERSITY</p>
+</div>
+</div>
+<header class="fixed top-0 inset-x-0 w-full z-40 bg-surface/85 dark:bg-slate-950/85 backdrop-blur-xl border-b border-transparent dark:border-slate-800 shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-colors duration-200"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs shrink-0"><img alt="GDG Logo" class="w-8 h-8 shrink-0 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrQom3Tt9rvCBR6UmxbyHYDfXjcqYULwXzFT0GV1G8_RVw_2LLbmCWBXVH2Y0LnuteeKmmQF9CrgyOK3DR-szZPAbKtF4SedBoGRQAdesNNUw6g-0ZR6kmXp2B_gMTtBEvAyvrRPpNWkjm0grdk_V6L6gTNgZAXZogyE_VESjWSgQ8KsmOQ4GblPS833Tk4GyKrKFaXamr6HEtLAz0KsNCuTpd_9Kw3fxEXvUxn1LY8mlooDJX8S7nrA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface dark:text-white leading-tight font-bold">GDG on Campus</span><span class="font-label-sm text-label-sm text-on-surface-variant dark:text-slate-400 leading-tight">Poornima University</span></div></div></div><nav class="hidden md:flex items-center gap-space-xs bg-surface-container-low dark:bg-slate-900 px-space-xs py-space-xs rounded-full shadow-[0_1px_8px_rgba(0,0,0,0.02)] border border-transparent dark:border-slate-800" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg shadow-sm"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant dark:text-slate-300 hover:text-on-surface dark:hover:text-white hover:bg-surface-container dark:hover:bg-slate-800 transition-all" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant dark:text-slate-300 hover:text-on-surface dark:hover:text-white hover:bg-surface-container dark:hover:bg-slate-800 transition-all" data-path="about" href="#">About</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant dark:text-slate-300 hover:text-on-surface dark:hover:text-white hover:bg-surface-container dark:hover:bg-slate-800 transition-all" data-path="events" href="#">Events</a><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-headline-sm rounded-lg shadow-sm" data-path="organizers" href="#">Organizers</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant dark:text-slate-300 hover:text-on-surface dark:hover:text-white hover:bg-surface-container dark:hover:bg-slate-800 transition-all" data-path="media" href="#">Media</a></nav><div class="flex items-center gap-space-sm"><div aria-label="Toggle light and dark mode" class="relative w-16 h-8 rounded-full bg-surface-container-highest dark:bg-slate-800 cursor-pointer p-1 transition-colors duration-300 flex items-center justify-between shadow-inner border border-transparent dark:border-slate-700" id="theme-toggle-btn" role="button" tabindex="0"><span class="material-symbols-outlined text-label-sm text-primary select-none pl-1 transition-all duration-300 opacity-100" id="sun-icon">light_mode</span><span class="material-symbols-outlined text-label-sm text-outline select-none pr-1 transition-all duration-300 opacity-40" id="moon-icon">dark_mode</span><div class="absolute left-1 top-1 w-6 h-6 rounded-full bg-surface-container-lowest dark:bg-slate-900 shadow-md flex items-center justify-center transition-transform duration-300 transform translate-x-0 p-0.5 overflow-hidden ring-1 ring-black/5 dark:ring-white/10" id="theme-slider-thumb"><img alt="Google Logo" class="w-6 h-6 object-contain rounded-full select-none p-0.5 pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIElUPPJDKWUsJkYGvYr-ChJ8fsazIEhuJh_41c0t96s3ogNnfmnwKMKC4ABfRhHdqd-6u0fBQQgbbja7ODASy3V-ITdXiB6pP9VIFEncqilwUvAXwNKpqd8Kc6Y1H8zigKdjzZF1Dek7c9_prZ6zz8AR_32Krw0xKL54p3D-QkaZVBzfALAhX5VKaR3okk1LOYVOw96YC9twMRIzLzZIcjy6WC7Hze2d1F-H0HDUHUQXs7pV4jCxNEw"/></div></div></div></div></header><main class="w-full pt-20 bg-surface dark:bg-slate-950 min-h-[calc(100vh-20rem)] transition-colors duration-200"><div class="flex flex-col w-full">
+<section class="relative w-full overflow-hidden bg-surface-container-low dark:bg-slate-900/60 py-space-xl transition-colors duration-200">
+<div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,88,189,0.15),rgba(250,248,255,0))]"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin relative z-10 flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs w-fit bg-primary-fixed dark:bg-blue-950/60 text-on-primary-fixed dark:text-blue-300 px-space-md py-space-xs rounded-full border border-transparent dark:border-blue-800/40">
+<span class="material-symbols-outlined text-label-sm">groups</span>
+<span class="font-code-sm text-code-sm uppercase tracking-wider">Leadership Chapter 2024–2025</span>
+</div>
+<h1 class="font-headline-2xl text-headline-2xl text-on-surface dark:text-white tracking-tight">The Core Organizers</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-slate-300">
+            Meet the innovators steering GDG on Campus Poornima University. Architecting high-impact workshops, hackathons, and Google Developer ecosystems across Jaipur.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest dark:bg-slate-900 px-space-md py-space-sm rounded-xl shadow-sm border border-transparent dark:border-slate-800 self-start md:self-auto">
+<div class="flex -space-x-2 overflow-hidden">
+<img alt="Raghav Arora" class="inline-block h-8 w-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNnwMUZpAvbrnC1akJFJoLtPauM1i5ciOudGDG2idXtaY3ixWTGxdlueSevHXVmL2-2N7zFFAXPjIJ6bOT9heUaK0BXQkAFEfwpxaaFk9tszU9byCdQN2VfWpTMFpj2yHVo89vUS3sqcC2hHskZk7dJTyUUCe5r5JFm112hZ04mOVBJ3XCN50S-aYzZ_FCF0PVv7hGY7-D-jS_D9dccPeiEXlZCtvXuMe1JnDhpc-Bior4kJeaj9mFtg"/>
+<img alt="Keshav Verma" class="inline-block h-8 w-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8wzvRX7uf8361kUnDso2nAsfq61-IoB4LCZA2EM0W6wO-1mvoRscPQpbIpruot443hBJcpVYz2_Y5la3v9UvIv6ih072b48rm8Wzfg5lEYBlXNIP2JDDhrAhUrxRPHcyW7jgHiSzXGk0-d_0xchRjsx6EbILWlbO4103iwfLTf0uklzxB5OiTwmkSmqGNRLCVpdXf9vkQOK_zsSGh72fXVMb92e6N67jNzdPBzWeVjZFKjOs59cXpFw"/>
+<img alt="Devika Kanoongo" class="inline-block h-8 w-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyh-zxc8H26N6hs1VUWIXp5p4H97N3yemKW3DBDqQCAR57swsMIHUWHzqa2jrhh0_BgBiF8747qUR7FcgipQqKILVulByc3l-1lSiUSHR7l2vkGLNVZtHRUW3yVcexOGHUO6DfCujXWd1pDzofKNuBNJANQIsBt8x3hanLGTdNLQ2E8wtIaJEPHwH7o22bs0ZNnOTsj7naD6fuZExu1nd_0i2q9n8DfVpN_cdQusaA7X6RZS-xm0VjzA"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline dark:text-slate-400 uppercase font-semibold">Chapter Leads</span>
+<span class="font-title-lg text-label-md text-primary dark:text-blue-400 font-bold">3 Active Directors</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter items-stretch"><div class="group relative flex flex-col justify-between bg-surface-container-lowest dark:bg-slate-900 rounded-2xl p-space-lg shadow-sm hover:shadow-xl border border-transparent dark:border-slate-800 transition-all duration-300 transform hover:-translate-y-1"><div class="absolute top-0 inset-x-0 h-1.5 bg-tertiary-container rounded-t-2xl"></div><div class="flex flex-col gap-space-md"><div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container dark:bg-slate-950"><img alt="Raghav Arora" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQxcpTRMMq8QQXIFItTx3pEUhcn--A36UdelgHmsHX7Lbsecu0OZn5Ez2OetCXOSROQprZiEefMnyj6ZP7GBhGBQlxCIu9sZDzB1XkNFHSKf-VZLevZIvZ4Ee-cPRrsMNn5aGOs-OB4FGrf9TZwpaDDxGbrQSWpK5zyubklxM6Ugy7ghWuIjiVouKR66xxbixm7B0B-S-yJ7auPIT1WSGFvKvxKWnlerJnf4PafgCht2MGFIT0LK1K5w"/></div><div class="flex flex-col pt-1"><h2 class="text-2xl font-semibold text-slate-900 dark:text-white">Raghav Arora</h2></div></div><div class="pt-space-md mt-space-md flex items-center justify-between"><button class="open-profile-btn w-full flex items-center justify-center gap-space-xs bg-primary text-on-primary px-space-md py-2 rounded-full font-label-md text-label-md shadow-sm hover:bg-primary-container transition-all cursor-pointer" data-organizer="raghav" type="button"><span class="">View profile</span><span class="material-symbols-outlined text-label-md">arrow_forward</span></button></div></div><div class="group relative flex flex-col justify-between bg-surface-container-lowest dark:bg-slate-900 rounded-2xl p-space-lg shadow-sm hover:shadow-xl border border-transparent dark:border-slate-800 transition-all duration-300 transform hover:-translate-y-1"><div class="absolute top-0 inset-x-0 h-1.5 bg-primary rounded-t-2xl"></div><div class="flex flex-col gap-space-md"><div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container dark:bg-slate-950"><img alt="Keshav Verma" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzQ49a-l-tX0PPynPbUpX7MQy-lclOt2FYYJpFaSpvafkjY2coSRoSKyzGf65nweQVSn1yKpfJa1GYThQ3w-YjkxXxoVLlgfCTWh5dndCyqMsWJc93_Seubar9hBH9WroWEkdfe5q3XZtbb0IICRgkl_2NF8NMBBpIa5A3enwAVZppPhtjQas6XZLoU4iD99jXyK62xU6oxfMBbp3TwDEIFoqhqFPw-bCNBZ4mzaUztr9NrVYXQDQ0HA"/></div><div class="flex flex-col pt-1"><h2 class="text-2xl font-semibold text-slate-900 dark:text-white">Keshav Verma</h2></div></div><div class="pt-space-md mt-space-md flex items-center justify-between"><button class="open-profile-btn w-full flex items-center justify-center gap-space-xs bg-primary text-on-primary px-space-md py-2 rounded-full font-label-md text-label-md shadow-sm hover:bg-primary-container transition-all cursor-pointer" data-organizer="keshav" type="button"><span class="">View profile</span><span class="material-symbols-outlined text-label-md">arrow_forward</span></button></div></div><div class="group relative flex flex-col justify-between bg-surface-container-lowest dark:bg-slate-900 rounded-2xl p-space-lg shadow-sm hover:shadow-xl border border-transparent dark:border-slate-800 transition-all duration-300 transform hover:-translate-y-1"><div class="absolute top-0 inset-x-0 h-1.5 bg-secondary rounded-t-2xl"></div><div class="flex flex-col gap-space-md"><div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container dark:bg-slate-950"><img alt="Devika Kanoongo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFspzH45eB_1gxnTYY4Gj8qnxv5M9WGSJEAO1a_akEM4JtSntNccbdP0q69LaixN486wnO8mAvtM502AkhKd7G7vr2xvA-L_8HDjTGBhv_Mo88uLP5E8rROPEGcUUWyAd6QsC_cHmzQyq0la0hrJr5lzN9fp2iM7Y8Q2lyGRqls0hHASYN407eNpntao6CIRQ2eqkhxAe_2s47uFu6wslDz_hgtBs8jwLStRy3Oo0qvdnXU2P3nrzgOQ"/></div><div class="flex flex-col pt-1"><h2 class="text-2xl font-semibold text-slate-900 dark:text-white">Devika Kanoongo</h2></div></div><div class="pt-space-md mt-space-md flex items-center justify-between"><button class="open-profile-btn w-full flex items-center justify-center gap-space-xs bg-primary text-on-primary px-space-md py-2 rounded-full font-label-md text-label-md shadow-sm hover:bg-primary-container transition-all cursor-pointer" data-organizer="devika" type="button"><span class="">View profile</span><span class="material-symbols-outlined text-label-md">arrow_forward</span></button></div></div></div>
+</section>
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 opacity-0 pointer-events-none transition-opacity duration-300" id="profile-modal">
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-md" id="modal-backdrop"></div>
+<div class="relative w-full max-w-3xl bg-surface-container-lowest dark:bg-slate-900 border border-transparent dark:border-slate-800 rounded-2xl shadow-2xl z-10 overflow-hidden flex flex-col max-h-[90vh] transition-transform duration-300 transform scale-95" id="modal-container">
+<div class="flex items-center justify-between px-space-lg py-space-md bg-surface-container dark:bg-slate-800/80 border-b border-transparent dark:border-slate-800">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-on-surface-variant dark:text-slate-300">
+<span class="material-symbols-outlined text-label-md text-primary dark:text-blue-400">terminal</span>
+<span class="" id="modal-url-label">/organizers/raghav-arora</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-high dark:bg-slate-700/60 rounded-full p-0.5">
+<button aria-label="Previous organizer" class="p-1 rounded-full hover:bg-surface dark:hover:bg-slate-800 text-on-surface dark:text-slate-200" id="modal-prev-btn" type="button">
+<span class="material-symbols-outlined text-label-md">arrow_back</span>
+</button>
+<button aria-label="Next organizer" class="p-1 rounded-full hover:bg-surface dark:hover:bg-slate-800 text-on-surface dark:text-slate-200" id="modal-next-btn" type="button">
+<span class="material-symbols-outlined text-label-md">arrow_forward</span>
+</button>
+</div>
+<button aria-label="Close modal" class="p-1.5 rounded-full hover:bg-surface-container-highest dark:hover:bg-slate-700 text-on-surface-variant dark:text-slate-300 transition-colors" id="modal-close-btn" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+</div>
+<div class="overflow-y-auto p-space-lg md:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+<div class="relative w-28 h-28 sm:w-36 sm:h-36 shrink-0 rounded-2xl overflow-hidden shadow-md bg-surface-container dark:bg-slate-950">
+<img alt="Profile Photo" class="w-full h-full object-cover" id="modal-image" src=""/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs bg-primary-fixed dark:bg-blue-950/60 text-on-primary-fixed dark:text-blue-300 px-space-sm py-0.5 rounded-full w-fit border border-transparent dark:border-blue-800/40">
+<span class="material-symbols-outlined text-label-sm">verified</span>
+<span class="font-code-sm text-code-sm font-semibold uppercase tracking-wider" id="modal-role">GDGoC Organizer</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface dark:text-white font-bold" id="modal-name">Raghav Arora</h3>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-400" id="modal-affiliation">Poornima University</p>
+<div class="flex items-center gap-space-xs pt-space-xs" id="modal-socials">
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline dark:text-slate-400 uppercase font-semibold">About me</span>
+<p class="font-body-md text-body-md text-on-surface dark:text-slate-200 leading-relaxed whitespace-pre-line" id="modal-bio">
+            Lead bio goes here.
+          </p>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline dark:text-slate-400 uppercase font-semibold">Core Competencies &amp; Tracks</span>
+<div class="flex flex-wrap gap-space-xs" id="modal-skills">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+(function() {
+  const organizersData = [
+    {
+      id: "raghav",
+      name: "Raghav Arora",
+      role: "GDGoC Organizer",
+      affiliation: "Poornima University",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCNnwMUZpAvbrnC1akJFJoLtPauM1i5ciOudGDG2idXtaY3ixWTGxdlueSevHXVmL2-2N7zFFAXPjIJ6bOT9heUaK0BXQkAFEfwpxaaFk9tszU9byCdQN2VfWpTMFpj2yHVo89vUS3sqcC2hHskZk7dJTyUUCe5r5JFm112hZ04mOVBJ3XCN50S-aYzZ_FCF0PVv7hGY7-D-jS_D9dccPeiEXlZCtvXuMe1JnDhpc-Bior4kJeaj9mFtg",
+      urlSlug: "raghav-arora",
+      bio: "I’m Raghav Arora, the Cyber Boy of Rajasthan, a cybersecurity enthusiast, ethical hacker, and MERN Stack Developer. I’m also a GDGoC Organizer, WordPress Developer, Blogger, Writer, and SEO Specialist passionate about technology, cybersecurity, and innovation. I have participated in 20+ hackathons and achieved 4 hackathon wins, along with a CTF victory. My technical interests include ethical hacking, web application security, API penetration testing, vulnerability research, and responsible disclosure. My cybersecurity research has earned Hall of Fame recognition from organizations including NASA, WHO, Jio, Swiggy, Zepto, Panasonic, and Nokia. I have also received recognition and awards from Rajasthan Police IPS officers (ADGP and DIGP) and DoIT&C Rajasthan for my contributions to cybersecurity. As a GDGoC Organizer, I’m passionate about building a strong developer community, encouraging students to explore emerging technologies, and promoting collaboration, innovation, and continuous learning. My mission is to build impactful digital products, strengthen cybersecurity, and inspire the next generation of developers and security researchers.",
+      skills: ["Google Cloud", "AI/ML", "Full Stack", "Community Building", "DevOps Architecture"],
+      socials: [
+        { type: "x", url: "https://x.com/raghav_arora", icon: "alternate_email", label: "X / Twitter" },
+        { type: "linkedin", url: "https://www.linkedin.com/in/raghav-arora", icon: "share", label: "LinkedIn" }
+      ],
+      primaryUrl: "https://x.com/raghav_arora"
+    },
+    {
+      id: "keshav",
+      name: "Keshav Verma",
+      role: "GDGoC Organizer",
+      affiliation: "Poornima University",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD8wzvRX7uf8361kUnDso2nAsfq61-IoB4LCZA2EM0W6wO-1mvoRscPQpbIpruot443hBJcpVYz2_Y5la3v9UvIv6ih072b48rm8Wzfg5lEYBlXNIP2JDDhrAhUrxRPHcyW7jgHiSzXGk0-d_0xchRjsx6EbILWlbO4103iwfLTf0uklzxB5OiTwmkSmqGNRLCVpdXf9vkQOK_zsSGh72fXVMb92e6N67jNzdPBzWeVjZFKjOs59cXpFw",
+      urlSlug: "keshav-verma",
+      bio: "Computer Science student at Poornima University, passionate about software development, Google technologies, AI, and building impactful projects. As a Class Representative and hackathon team lead, I enjoy bringing people together, solving real-world problems, and turning innovative ideas into working solutions. As a GDG on Campus Organiser, my goal is to build a vibrant developer community through technical workshops, hands-on sessions, hackathons, collaboration, and peer learning—helping students learn by building and grow together.",
+      skills: ["AI/ML", "Python & TensorFlow", "Full Stack", "Community Building", "System Design"],
+      socials: [
+        { type: "linkedin", url: "https://www.linkedin.com/in/keshav-verma", icon: "share", label: "LinkedIn" }
+      ],
+      primaryUrl: "https://www.linkedin.com/in/keshav-verma"
+    },
+    {
+      id: "devika",
+      name: "Devika Kanoongo",
+      role: "GDGoC Organizer",
+      affiliation: "Poornima University",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAyh-zxc8H26N6hs1VUWIXp5p4H97N3yemKW3DBDqQCAR57swsMIHUWHzqa2jrhh0_BgBiF8747qUR7FcgipQqKILVulByc3l-1lSiUSHR7l2vkGLNVZtHRUW3yVcexOGHUO6DfCujXWd1pDzofKNuBNJANQIsBt8x3hanLGTdNLQ2E8wtIaJEPHwH7o22bs0ZNnOTsj7naD6fuZExu1nd_0i2q9n8DfVpN_cdQusaA7X6RZS-xm0VjzA",
+      urlSlug: "devika-kanoongo",
+      bio: "I’m Devika Kanoongo, a passionate technologist, community builder, and GDGoC Organizer at Poornima University. My journey in tech is driven by curiosity and a commitment to creating inclusive, hands-on spaces where student developers, designers, and innovators feel empowered to experiment, collaborate, and push the boundaries of modern technology.\n\nAs a core organizer, I focus on curating impactful bootcamps, design workshops, and hackathons that bridge the gap between academic theory and industry engineering standards. I take great pride in championing diversity in tech and mentoring emerging builders through structured skill development programs across Google Cloud, Android, and progressive web ecosystems.\n\nMy mission with Google Developer Groups on Campus Poornima is to cultivate a thriving, resilient student tech collective in Jaipur—one where every learner gains the practical confidence, network, and creative freedom to build real-world solutions and shape the future of our regional ecosystem.",
+      skills: ["Full Stack", "Modern UI/UX", "Web Tech", "Community Building", "Women Techmakers Outreach"],
+      socials: [
+        { type: "linkedin", url: "https://www.linkedin.com/in/devika-kanoongo", icon: "share", label: "LinkedIn" }
+      ],
+      primaryUrl: "https://www.linkedin.com/in/devika-kanoongo"
+    }
+  ];
+
+  let currentIndex = 0;
+  const modal = document.getElementById('profile-modal');
+  const modalContainer = document.getElementById('modal-container');
+  const modalBackdrop = document.getElementById('modal-backdrop');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+  const modalPrevBtn = document.getElementById('modal-prev-btn');
+  const modalNextBtn = document.getElementById('modal-next-btn');
+
+  const imgEl = document.getElementById('modal-image');
+  const nameEl = document.getElementById('modal-name');
+  const roleEl = document.getElementById('modal-role');
+  const affilEl = document.getElementById('modal-affiliation');
+  const bioEl = document.getElementById('modal-bio');
+  const urlLabel = document.getElementById('modal-url-label');
+  const skillsContainer = document.getElementById('modal-skills');
+  const socialsContainer = document.getElementById('modal-socials');
+
+  function renderOrganizer(index) {
+    currentIndex = index;
+    const org = organizersData[index];
+
+    imgEl.src = org.image;
+    imgEl.alt = org.name;
+    nameEl.textContent = org.name;
+    roleEl.textContent = org.role;
+    affilEl.textContent = org.affiliation;
+    bioEl.textContent = org.bio;
+    urlLabel.textContent = '/organizers/' + org.urlSlug;
+
+    skillsContainer.innerHTML = '';
+    org.skills.forEach(skill => {
+      const chip = document.createElement('span');
+      chip.className = 'font-code-sm text-code-sm bg-surface-container dark:bg-slate-800 px-space-sm py-space-xs rounded-full text-on-surface dark:text-slate-200 font-medium';
+      chip.textContent = skill;
+      skillsContainer.appendChild(chip);
+    });
+
+    socialsContainer.innerHTML = '';
+    org.socials.forEach(s => {
+      const a = document.createElement('a');
+      a.href = s.url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.className = 'flex items-center gap-1 font-body-sm text-body-sm text-primary dark:text-blue-400 hover:text-primary-container dark:hover:text-blue-300 transition-colors bg-surface-container dark:bg-slate-800 px-space-sm py-1 rounded-full';
+      a.innerHTML = `<span class="material-symbols-outlined text-label-md">${s.icon}</span><span>${s.label}</span>`;
+      socialsContainer.appendChild(a);
+    });
+  }
+
+  function openModal(index) {
+    renderOrganizer(index);
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modalContainer.classList.remove('scale-95');
+    modalContainer.classList.add('scale-100');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modalContainer.classList.remove('scale-100');
+    modalContainer.classList.add('scale-95');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.open-profile-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.getAttribute('data-organizer');
+      const idx = organizersData.findIndex(o => o.id === id);
+      if (idx !== -1) openModal(idx);
+    });
+  });
+
+  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+  if (modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
+
+  if (modalPrevBtn) {
+    modalPrevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + organizersData.length) % organizersData.length;
+      renderOrganizer(currentIndex);
+    });
+  }
+
+  if (modalNextBtn) {
+    modalNextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % organizersData.length;
+      renderOrganizer(currentIndex);
+    });
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (modal && !modal.classList.contains('pointer-events-none')) {
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowRight' && modalNextBtn) modalNextBtn.click();
+      if (e.key === 'ArrowLeft' && modalPrevBtn) modalPrevBtn.click();
+    }
+  });
+})();
+</script></main><footer class="w-full bg-surface-container-low dark:bg-slate-900 border-t border-transparent dark:border-slate-800 mt-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.02)] transition-colors duration-200"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start pb-space-lg"><div class="md:col-span-5 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="GDG Logo" class="w-7 h-7 shrink-0 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrQom3Tt9rvCBR6UmxbyHYDfXjcqYULwXzFT0GV1G8_RVw_2LLbmCWBXVH2Y0LnuteeKmmQF9CrgyOK3DR-szZPAbKtF4SedBoGRQAdesNNUw6g-0ZR6kmXp2B_gMTtBEvAyvrRPpNWkjm0grdk_V6L6gTNgZAXZogyE_VESjWSgQ8KsmOQ4GblPS833Tk4GyKrKFaXamr6HEtLAz0KsNCuTpd_9Kw3fxEXvUxn1LY8mlooDJX8S7nrA"/><span class="font-headline-sm text-headline-sm text-on-surface dark:text-white">GDG on Campus</span></div><p class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 max-w-sm">Google Developer Groups on Campus at Poornima University, Jaipur. Empowering university technocrats, open source innovators, and student developers to build modern technology.</p><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-outline dark:text-slate-400"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-label-md">location_on</span> ISI-2, RIICO Institutional Area, Sitapura, Jaipur, Rajasthan 302022</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-label-md">school</span> Poornima University Faculty of Computer Science &amp; Engineering</span></div></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface dark:text-white">Explore</span><div class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="home" href="#">Home Overview</a><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="about" href="#">About Chapter</a><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="events" href="#">Events &amp; Workshops</a><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="organizers" href="#">Core Organizers</a><a class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400 hover:text-on-surface dark:hover:text-white transition-colors" data-path="media" href="#">Media &amp; Gallery</a></div></div><div class="md:col-span-4 flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface dark:text-white">Connect With Us</span><p class="font-body-sm text-body-sm text-on-surface-variant dark:text-slate-400">Follow our official community hubs for hackathons, study jams, and technical announcements.</p><div class="flex items-center gap-space-sm"><a aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-surface-container dark:bg-slate-800 flex items-center justify-center text-on-surface-variant dark:text-slate-300 hover:bg-primary hover:text-on-primary transition-all duration-200" href="https://www.linkedin.com/company/gdg-poornima-university/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined">share</span></a><a aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container dark:bg-slate-800 flex items-center justify-center text-on-surface-variant dark:text-slate-300 hover:bg-tertiary hover:text-on-tertiary transition-all duration-200" href="https://www.instagram.com/gdg.poornima" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined">photo_camera</span></a><a aria-label="YouTube" class="w-10 h-10 rounded-full bg-surface-container dark:bg-slate-800 flex items-center justify-center text-on-surface-variant dark:text-slate-300 hover:bg-tertiary-container hover:text-on-tertiary-container transition-all duration-200" href="https://www.youtube.com/gdgs" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined">smart_display</span></a></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm border-t border-transparent dark:border-slate-800/60"><span class="font-body-sm text-body-sm text-outline dark:text-slate-500">© 2025 GDG on Campus Poornima University. All rights reserved.</span><span class="font-code-sm text-code-sm text-outline-variant dark:text-slate-500">Designed for Developer Communities • Powered by Google Developers</span></div></div></footer>
+<script>
+(function() {
+  // 1. Loading Screen: Exactly 2000ms visible before fading out
+  var loadingEl = document.getElementById('loading-screen');
+  if (loadingEl) {
+    setTimeout(function() {
+      loadingEl.style.opacity = '0';
+      loadingEl.style.pointerEvents = 'none';
+      setTimeout(function() {
+        if (loadingEl && loadingEl.parentNode) {
+          loadingEl.parentNode.removeChild(loadingEl);
+        }
+      }, 700);
+    }, 2000);
+  }
+
+  // 2. Interactive Reactive Theme State Management
+  var themeState = {
+    current: (function() {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || saved === 'light') return saved;
+      } catch (e) {}
+      return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    })(),
+    listeners: [],
+    get theme() {
+      return this.current;
+    },
+    set theme(val) {
+      this.current = val;
+      try {
+        localStorage.setItem('theme', val);
+      } catch (e) {}
+      this.notify();
+    },
+    subscribe: function(fn) {
+      this.listeners.push(fn);
+      fn(this.current);
+    },
+    notify: function() {
+      var self = this;
+      this.listeners.forEach(function(fn) {
+        fn(self.current);
+      });
+    }
+  };
+
+  var toggleBtn = document.getElementById('theme-toggle-btn');
+  var thumb = document.getElementById('theme-slider-thumb');
+  var sunIcon = document.getElementById('sun-icon');
+  var moonIcon = document.getElementById('moon-icon');
+
+  // React to theme state changes: apply/remove 'dark' class & sync toggle elements
+  themeState.subscribe(function(theme) {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      if (thumb) {
+        thumb.classList.remove('translate-x-0');
+        thumb.classList.add('translate-x-7');
+      }
+      if (sunIcon) {
+        sunIcon.classList.remove('opacity-100', 'text-primary');
+        sunIcon.classList.add('opacity-0', 'pointer-events-none');
+      }
+      if (moonIcon) {
+        moonIcon.classList.remove('opacity-40', 'text-outline');
+        moonIcon.classList.add('opacity-100', 'text-blue-400');
+      }
+    } else {
+      document.documentElement.classList.remove('dark');
+      if (thumb) {
+        thumb.classList.remove('translate-x-7');
+        thumb.classList.add('translate-x-0');
+      }
+      if (sunIcon) {
+        sunIcon.classList.remove('opacity-0', 'pointer-events-none');
+        sunIcon.classList.add('opacity-100', 'text-primary');
+      }
+      if (moonIcon) {
+        moonIcon.classList.remove('opacity-100', 'text-blue-400');
+        moonIcon.classList.add('opacity-40', 'text-outline');
+      }
+    }
+  });
+
+  // Bind click & keyboard events for accessibility and seamless switching
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      themeState.theme = themeState.theme === 'dark' ? 'light' : 'dark';
+    });
+    toggleBtn.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        themeState.theme = themeState.theme === 'dark' ? 'light' : 'dark';
+      }
+    });
+  }
+})();
+</script>
+</body></html>
